@@ -3,8 +3,7 @@ import Modal from "antd/lib/modal/Modal";
 import React from "react";
 import { withRouter } from "react-router";
 
-const StateModal = ({ isOpen, handleOpen, val, colleges, map, history }) => {
-  const filteredColleges = colleges.filter((u) => u.state === val);
+const ColModal = ({ isOpen, colleges, handleOpen, history }) => {
   const columns = [
     {
       title: "College Id",
@@ -27,20 +26,17 @@ const StateModal = ({ isOpen, handleOpen, val, colleges, map, history }) => {
     },
   ];
   return (
-    <div>
+    <div className="student-table">
       <Modal
-        title="State Statistics"
+        title=""
         style={{ top: 20 }}
         visible={isOpen}
         onOk={handleOpen}
         onCancel={handleOpen}
       >
-        <h1>
-          {((map.get(val) * 100) / 150).toFixed(0)}% of colleges in {val}
-        </h1>
-        <p>List of the Colleges</p>
+        <p>List of all Colleges</p>
         <Table
-          dataSource={filteredColleges}
+          dataSource={colleges}
           columns={columns}
           className="table insti"
           size="small"
@@ -51,4 +47,4 @@ const StateModal = ({ isOpen, handleOpen, val, colleges, map, history }) => {
   );
 };
 
-export default withRouter(StateModal);
+export default withRouter(ColModal);

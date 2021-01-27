@@ -9,7 +9,8 @@
   padding: 10px 20px;
 }
 
-.student-table .ant-table-cell a {
+.student-table .ant-table-cell a,
+.insti a {
   color: #fcaaa9;
   font-weight: 600;
 }

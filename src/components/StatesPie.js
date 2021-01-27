@@ -3,6 +3,7 @@ import { getColleges } from "../auth";
 import Chart from "chart.js";
 import StateModal from "./StateModal";
 import CourseModal from "./CourseModal";
+import ColModal from "./ColModal";
 
 class StatesPie extends React.Component {
   constructor(props) {
@@ -15,6 +16,7 @@ class StatesPie extends React.Component {
       courseMap: new Map(),
       stateOpen: false,
       courseOpen: false,
+      collOpen: false,
     };
   }
 
@@ -201,6 +203,10 @@ class StatesPie extends React.Component {
     this.setState((prev) => ({ stateOpen: !prev.stateOpen }));
   };
 
+  handleCollOpen = () => {
+    this.setState((prev) => ({ collOpen: !prev.collOpen }));
+  };
+
   render() {
     return (
       <div>
@@ -215,6 +221,10 @@ class StatesPie extends React.Component {
         <h1 style={{ textAlign: "center" }}>
           Click on pie charts for more colleges details
         </h1>
+        <p style={{ textAlign: "center" }}>
+          (If pie chart is not visible try changing the width of browser or
+          refresh or click <a onClick={this.handleCollOpen}>here</a>)
+        </p>
         <div>
           <canvas
             style={{ cursor: "pointer" }}
@@ -236,6 +246,11 @@ class StatesPie extends React.Component {
             handleOpen={this.handleCourseOpen}
             val={this.state.selectedCourse}
             map={this.state.courseMap}
+            colleges={this.state.collist}
+          />
+          <ColModal
+            isOpen={this.state.collOpen}
+            handleOpen={this.handleCollOpen}
             colleges={this.state.collist}
           />
         </div>

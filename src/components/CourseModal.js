@@ -42,7 +42,7 @@ const CourseModal = ({ isOpen, handleOpen, val, colleges, map, history }) => {
         <Table
           dataSource={filteredColleges}
           columns={columns}
-          className="table"
+          className="table insti"
           size="small"
           pagination={{ pageSize: 10 }}
         />
