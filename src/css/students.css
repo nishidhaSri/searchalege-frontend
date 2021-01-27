@@ -1,0 +1,25 @@
+.student-table {
+  width: 60%;
+  margin: 20px auto;
+  padding: 10px 20px;
+  min-height: 100vh;
+}
+
+.student-table .ant-table {
+  padding: 10px 20px;
+}
+
+.student-table .ant-table-cell a {
+  color: #fcaaa9;
+  font-weight: 600;
+}
+
+.student-table .ant-table-small .ant-table-thead > tr > th {
+  background: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .student-table {
+    width: 98%;
+  }
+}

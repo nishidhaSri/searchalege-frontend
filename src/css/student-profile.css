@@ -1,0 +1,80 @@
+.student-profile {
+  min-height: 85vh;
+  background-color: #fcaaa9;
+}
+
+.student-profile > .ant-row {
+  margin: 55px;
+  min-height: 75vh;
+  background: white;
+  border-radius: 20px;
+}
+
+.first-col {
+  display: flex;
+}
+
+.first-col > img {
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+}
+
+.second-col {
+  background: black;
+  border-radius: 0 20px 20px 0;
+}
+
+.sec-col {
+  display: flex;
+  height: 100%;
+}
+
+.student-data {
+  margin: auto;
+  padding: 30px;
+}
+
+.student-name {
+  color: white;
+  letter-spacing: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.helper-text {
+  color: white;
+  /* font-style: italic; */
+  font-family: "Great Vibes", cursive;
+  font-size: 20px;
+  text-align: center;
+  color: #fcaaa9;
+}
+
+.college-name {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .second-col {
+    border-radius: 0 0 20px 20px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .student-profile > .ant-row {
+    margin: 20px;
+  }
+
+  .helper-text,
+  .college-name,
+  .student-name {
+    font-size: 5vw;
+  }
+}

@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap");
+
+.first-block {
+  background-color: #ffadad;
+  display: flex;
+  align-items: center;
+  min-height: 650px;
+  clip-path: ellipse(100% 55% at 48% 44%);
+}
+
+.first-block-text,
+.first-block-image {
+  width: 50%;
+}
+
+.tagline {
+  margin-left: 60px;
+  padding-left: 0;
+  font-family: "Crimson Pro", sans-serif;
+  color: #000;
+  font-size: 8vw;
+  line-height: 7vw;
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+}
+
+.tagline span {
+  margin: 5px 0;
+}
+
+.tagline span:nth-child(2) {
+  color: #fff;
+}
+
+.content {
+  margin-left: 60px;
+  padding-top: 40px;
+  padding-right: 100px;
+  padding-left: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.first-block-image {
+  display: flex;
+}
+
+.first-block-image img {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 426px) {
+  .first-block-image img {
+    width: 60%;
+    margin: 0 40px 40px;
+  }
+
+  .content {
+    padding-right: 20px;
+  }
+}

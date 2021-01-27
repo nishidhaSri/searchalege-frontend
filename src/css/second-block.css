@@ -1,0 +1,47 @@
+.second-block {
+  background: #f8f6e1;
+  clip-path: ellipse(100% 90% at 30% 90%);
+  min-height: 200px;
+  padding-bottom: 100px;
+}
+
+.second-block-content {
+  margin-left: 60px;
+  padding-top: 60px;
+  padding-left: 0;
+  font-family: "Crimson Pro", sans-serif;
+  color: rgb(223, 135, 135);
+  font-size: 5vw;
+  line-height: 7vw;
+  flex-direction: column;
+  font-weight: 700;
+}
+
+.second-block-content span {
+  color: #0000007c;
+}
+
+.under-data {
+  align-items: center;
+}
+
+/* .under-data .content {
+  width: 50%;
+} */
+
+.second-block-buttons {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.second-block-buttons .ant-btn,
+.second-block-buttons .ant-btn:hover,
+.second-block-buttons .ant-btn::after {
+  margin: 15px;
+  height: 50px;
+  font-size: 18px;
+  background: #ffadad;
+  border: 2px solid;
+  border-radius: 15px;
+}
