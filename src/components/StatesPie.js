@@ -223,7 +223,8 @@ class StatesPie extends React.Component {
         </h1>
         <p style={{ textAlign: "center" }}>
           (If pie chart is not visible try changing the width of browser or
-          refresh or click <a onClick={this.handleCollOpen}>here</a>)
+          refresh or click <a onClick={this.handleCollOpen}>here</a> for all
+          colleges)
         </p>
         <div>
           <canvas
