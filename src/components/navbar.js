@@ -4,7 +4,7 @@ import { MenuOutlined } from "@ant-design/icons";
 import { Drawer } from "antd";
 import { withRouter } from "react-router";
 
-const Navbar = ({ history }) => {
+const Navbar = (props) => {
   const [visible, setVisible] = useState(false);
   const showDrawer = () => {
     setVisible(true);
@@ -20,7 +20,7 @@ const Navbar = ({ history }) => {
       >
         Institutes
       </a>
-      <div className="title" onClick={() => history.push("/")}>
+      <div className="title" onClick={() => props.history.push("/")}>
         <span className="s-title">S</span>
         <span>earchalege</span>
       </div>
