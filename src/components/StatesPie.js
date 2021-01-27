@@ -185,7 +185,12 @@ class StatesPie extends React.Component {
     setTimeout(function () {
       chart1.update();
       chart2.update();
-    }, 1000);
+    }, 1200);
+
+    // setTimeout(function () {
+    //   chart1.update();
+    //   chart2.update();
+    // }, 1000);
   }
 
   handleCourseOpen = () => {
